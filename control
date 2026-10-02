@@ -1,0 +1,9 @@
+Package: com.nguyentronghieu.sneakycamtripletap
+Name: SneakyCam TripleTap (+)
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Description: Kích hoạt / Tắt SneakyCam bằng cách bấm 3 lần nút Volume (+). Bỏ hoàn toàn giữ nút và bấm 2 lần (iOS 16 RootHide - iPhone 13 Pro Max).
+Maintainer: Nguyễn Trọng Hiếu <traitimlolam@gmail.com>
+Author: Nguyễn Trọng Hiếu
+Section: Tweaks
