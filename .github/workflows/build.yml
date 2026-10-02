@@ -1,4 +1,4 @@
-name: Build SneakyCamTripleTap DEB
+name: Build SneakyCamHoldLeft DEB
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
         run: |
           make clean package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=roothide
           mkdir -p output
-          cp packages/*.deb output/SneakyCamTripleTap_roothide.deb
+          cp packages/*.deb output/SneakyCamHoldLeft_roothide.deb
 
       - name: List Output Files
         run: |
@@ -38,11 +38,12 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: startsWith(github.ref, 'refs/heads/main') || startsWith(github.ref, 'refs/heads/master')
         with:
-          tag_name: v1.0.0
-          name: SneakyCam TripleTap v1.0.0 (iPhone 13 Pro Max - iOS 16 RootHide)
+          tag_name: v1.1.0
+          name: SneakyCam Hold Left Notch v1.1.0 (Giữ Tai Thỏ Bên Trái - Bản Final)
           body: |
-            ### 📸 SneakyCam TripleTap (+) cho iPhone 13 Pro Max (iOS 16 RootHide)
-            - **Tính năng:** Bấm đúng 3 lần nút Volume (+) để bắt đầu / dừng quay lén SneakyCam.
-            - **Loại bỏ:** Tắt hoàn toàn tính năng giữ nút và bấm 2 lần để kích hoạt.
-            - **Phản hồi:** Rung nhẹ xúc giác Taptic Engine khi kích hoạt thành công.
+            ### 📸 SneakyCam Hold Left Notch v1.1.0 (Bản Final)
+            - **Kích hoạt ngầm bí mật:** Nhấn giữ tai thỏ bên trái (khu vực hiển thị Đồng hồ) để bật/tắt quay lén ngầm.
+            - **Rung nhẹ xúc giác:** Taptic feedback êm ái khi nhận lệnh, không chớp màn hình.
+            - **Tắt sạch phím âm lượng:** Vô hiệu hóa hoàn toàn mọi cách kích hoạt bằng phím Volume của SneakyCam gốc.
+            - **Không xung đột:** Tách rời hoàn toàn với chụp màn hình (giữ tai thỏ bên phải).
           files: output/*.deb
