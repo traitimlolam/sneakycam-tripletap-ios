@@ -1,9 +1,9 @@
-Package: com.nguyentronghieu.sneakycamtripletap
-Name: SneakyCam TripleTap (+)
+Package: com.nguyentronghieu.sneakycamholdleft
+Name: SneakyCam Hold Left Notch (Bản Final)
 Depends: mobilesubstrate
-Version: 1.0.0
+Version: 1.1.0
 Architecture: iphoneos-arm64e
-Description: Kích hoạt / Tắt SneakyCam bằng cách bấm 3 lần nút Volume (+). Bỏ hoàn toàn giữ nút và bấm 2 lần (iOS 16 RootHide - iPhone 13 Pro Max).
+Description: Bật / Tắt quay lén ngầm SneakyCam bằng cách nhấn giữ tai thỏ bên trái (khu vực đồng hồ). Tắt sạch toàn bộ cách kích hoạt bằng phím âm lượng.
 Maintainer: Nguyễn Trọng Hiếu <traitimlolam@gmail.com>
 Author: Nguyễn Trọng Hiếu
 Section: Tweaks
